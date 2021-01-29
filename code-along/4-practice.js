@@ -20,7 +20,7 @@ console.log('brian transferred 7000 KelloggCoin to evan')
 
 for (let i = 0; i < blockchain.length; i++) {
   let transaction = blockchain[i]
-  console.log(`${blockchain[i].fromUser} transferred ${blockchain[i].amount} KelloggCoin to ${blockchain[i].toUser}`)
+  console.log(`${transaction.fromUser} transferred ${transaction.amount} KelloggCoin to ${transaction.toUser}`)
   //output = transaction
 } 
 
