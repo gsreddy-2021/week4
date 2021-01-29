@@ -23,6 +23,10 @@ async function pageLoaded() {
   let products = json.products
   console.log(products)
 
+  let renderProduct = function() {
+    return 'RENDERING PRODUCT'
+  }
+
   // 2. write code to loop through the products
   for (let i = 0; i < products.length; i++) {
     let product = products[i]
@@ -35,6 +39,8 @@ async function pageLoaded() {
 
     // 4. Render product
     console.log(product)
+
+    // 5. then extract to the separate renderProduct
     element.insertAdjacentHTML('beforeend', `
     <div class="p-4 w-full md:w-1/2 lg:w-1/3">
         <div class="border h-full p-4 flex flex-col">
