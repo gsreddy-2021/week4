@@ -14,7 +14,9 @@ let burger = ['bottom bun', 'beyond burger patty', 'beef patty', 'cheese', 'onio
 
 // with a loop
 for (let i = 0; i < burger.length; i++) {
-  console.log(burger[i])
+  let ingredient = burger[i]
+  console.log(ingredient)
+  output = ingredient
 } 
 
 //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
